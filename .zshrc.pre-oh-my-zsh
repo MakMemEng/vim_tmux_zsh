@@ -1,0 +1,39 @@
+# neovim
+alias vi='nvim'
+alias vim='nvim'
+alias view='nvim -R'
+
+# # iterm2
+# export PATH=$PATH:/opt/homebrew/bin
+# export CLICOLOR=1
+# export TERM=xterm-256color
+# PROMPT='%F{green}%n %1~ $%f '
+
+# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+# eval "$(rbenv init -)"
+
+# export GODEBUG=asyncpreemptoff=1
+
+# # git
+# export PATH="/opt/homebrew/bin/git:$PATH"
+
+
+# # pyenv
+# export PYENV_ROOT="$HOME/.pyenv"
+# command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init -)"
+
+
+# # go
+# export GOPATH=$(go env GOPATH)
+# export PATH=$PATH:$GOPATH/bin
+# export PATH="/opt/homebrew/opt/curl/bin:$PATH"
+
+# Zsh
+setopt no_beep
+setopt auto_pushd
+setopt pushd_ignore_dups
+setopt auto_cd
+setopt hist_ignore_dups
+setopt share_history
+setopt inc_append_history

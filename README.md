@@ -64,6 +64,7 @@
 
 -   `:%s/search/replace/g`: `search`を`replace`へ一括置換
 -   `:%s/search/replace/gc`: 一つずつ確認しながら置換
+-   `:%s;{置換前文字列};{置換後文字列};g`: 特殊文字を含む場合
 
 ### 取り消し
 
@@ -131,3 +132,10 @@
 -   `Ctrl + g `:
 
 # Zsh Command
+
+-   `!(Command)`: 直近の Command 実行
+-   `!source`: ex) `source ~/.zshrc`
+-   `!!`: 直前のコマンドを実行
+-   `Ctrl + r`: History の Command 検索
+
+# Zsh Plugin
