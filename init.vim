@@ -1,13 +1,13 @@
-set shell=/bin/zsh
-set shiftwidth=4
-set tabstop=4
-set expandtab
-set textwidth=0
-set autoindent
-set hlsearch
-set clipboard=unnamed
-set number
-syntax on
+set shell=/bin/zsh      # Commandの際にzshを使用
+set shiftwidth=4        # Indentの幅
+set tabstop=4           # Tabに変換されるsize
+set expandtab           # Tabの入力の際にスペース
+set textwidth=0         # ワードラッピング無し
+set autoindent          # 自動Indent  :set pasteで解除可能
+set hlsearch            # Searchのhighlight
+set clipboard=unnamed   # クリップボードへの登録
+set number              # 行番号を追加
+syntax on               # SyntaxをEnable
 
 call plug#begin()
 Plug 'ntk148v/vim-horizon'
