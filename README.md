@@ -1,7 +1,18 @@
 -   ~/.zshrc
+-   ~/.zshrc.pre-oh-my-zsh
 -   ~/.config/nvim/init.vim
 -   ~/.local/share/nvim/plugged
 -   ~/.tmux.conf
+
+# Zsh Install
+
+-   `zsh --version`
+-   `echo $SHELL`
+-   `cat /etc/shells`
+-   `sudo apt update && apt upgrade -y`
+-   `sudo apt-get install zsh -y`
+-   `chsh -s /bin/zsh`
+-   `where zsh`
 
 # Vim/NeoVim Command
 
@@ -139,3 +150,67 @@
 -   `Ctrl + r`: History の Command 検索
 
 # Zsh Plugin
+
+### z
+
+Install:
+`$ vim ~/.zshrc plugins=(... z)`
+Usage:
+`$ z plug`
+
+### autojump -> M1 Mac does not work ?
+
+### web-search
+
+Install:
+`$ vim ~/.zshrc`
+`plugins=(... web-search)`
+Usage:
+`google <search word>`
+
+### python
+
+Install:
+`$ vim ~/.zshrc plugins=(... python)`
+Usage:
+`$ pyclean`
+
+### fzf
+
+Install:
+`$ brew install fzf`
+`$ vim ~/.zshrc plugins=(... fzf)`
+Usage:
+`Control + T` or `fzf`
+`Control + R` => `j` or `k`
+
+### zsh-syntax-highlighting
+
+Install:
+`$ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git`
+`$ ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
+`$ vim ~/.zshrc`
+`plugins=( ... zsh-syntax-highlighting)`
+Usage:
+`$ echo ‘hello’`
+
+### zsh-autosuggestions
+
+Install:
+`$ git clone https://github.com/zsh-users/zsh-autosuggestions`
+`${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
+`$ vim ~/.zshrc`
+`plugins=( ... zsh-autosuggestions)`
+
+### Shpotify
+
+### powerlevel10k
+
+Install:
+`git clone --depth=1 https://github.com/romkatv/powerlevel10k.git`
+`${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`
+Install MesloLGS NF font and setup in iterm2/Warp
+`$ vim ~/.zshrc`
+`Set ZSH_THEME="powerlevel10k/powerlevel10k" in ~/.zshrc.`
+`$ p10k configure`
+`$ source ~/.p10k.zsh`
